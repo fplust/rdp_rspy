@@ -1,0 +1,14 @@
+[package]
+name = "rdp_rspy"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rdp_rspy"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.5", features = ["extension-module"] }
+# rdp-rs = { path = "../rdp-rs" }
+rdp-rs = "0.1.0"
